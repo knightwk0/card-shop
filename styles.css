@@ -1,0 +1,179 @@
+/* styles.css */
+
+/* Base styles */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #121212; /* dark background for bold look */
+  color: #f1f1f1; /* light text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  background-color: #a67c00; /* rich gold */
+  color: #121212;
+  padding: 20px 0;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.nav-bar {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.nav-bar a {
+  color: #121212;
+  text-decoration: none;
+  font-weight: 700;
+  margin: 0 15px;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+  text-transform: uppercase;
+}
+
+.nav-bar a:hover {
+  color: #f2c94c;
+}
+
+/* Hero Section */
+.hero-section {
+  text-align: center;
+  padding: 60px 20px 40px 20px;
+  background: linear-gradient(135deg, #a67c00 0%, #f2c94c 100%);
+  color: #121212;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+.hero-section h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.hero-section p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #121212;
+  color: #f2c94c;
+  font-weight: 900;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(242, 201, 76, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #333;
+}
+
+/* Cards Section */
+.cards-section {
+  margin-top: 50px;
+}
+
+.cards-section h2 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid #a67c00;
+  padding-bottom: 8px;
+  margin-bottom: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.card {
+  background: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 7px 14px rgba(0,0,0,0.8);
+  padding: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #f1f1f1;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(166, 124, 0, 0.7);
+}
+
+.card img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+/* About and Contact Sections */
+.about-section, .contact-section {
+  margin-top: 60px;
+  padding-bottom: 60px;
+  color: #ddd;
+}
+
+.about-section h2, .contact-section h2 {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #a67c00;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.about-section p, .contact-section p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #333;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .cards-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
